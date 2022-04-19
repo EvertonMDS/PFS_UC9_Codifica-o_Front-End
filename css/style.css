@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+*{
+margin: 0 auto;
+padding:0 auto;
+
+}
+
+
+
+.cabecalho{
+    height:70px;   
+    background-color: rgb(35, 60, 225);
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+       
+}
+
+
+#nomeloja{
+
+font-style: oblique;
+font-size: 60px;
+font-weight:bolder;
+padding: 10px;
+padding-left: 30px;
+
+
+
+}
+
+
+
+#menusuperior a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left: 24px;
+    padding-right: 24px;
+
+}
+
+#menusuperior a:hover{
+
+color: white;
+background-color: black;
+
+}
+
+
+.lateral_menu{
+
+    height: 673px;
+    width: 20%;
+    background-color: rgb(109, 109, 120);
+    float: left;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+     
+}
+
+.lateral_menu a{
+
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+   
+}
+
+.lateral_menu a:hover{
+
+    color: white;
+    background-color: black;
+
+}
+
+.principal{
+
+    height: 740px;
+    width: auto;
+    background-color: gray;
+
+}
+
+
+
+
+/* -------Inicio da tentativa de menu ------ */
+
+
+
+
+
+
+
+
+
+
+.container-fluid{
+
+background-color: rgb(35, 60, 225);
+font-size: 25px;
+display: flex;
+justify-content: space-around;
+height: 50px;
+font-weight: bolder;
+
+}
+
+
+
+ 
+
+
+
+
+
+
+/* -------Fim da tentativa de menu ------ */
+
+
+
+
+
+
+
+
+
+
+
+/* ---Inicio do Formulario --- */
+
+
+
+
+
+.formulario{
+
+margin: 0;padding: 0;box-sizing: border-box;
+background-color: blue;
+max-width: 1000px;
+width: 100%;
+padding:50px;
+position:absolute;
+margin-left:400px;
+margin-top: 300px;
+text-align: center;
+
+}
+
+
+.formulario h1{
+
+
+text-align: center;
+padding: 10px;
+color:black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+
+}
+
+
+.formulario input[type=email],
+.formulario input[type=password]{
+width: 100%;
+height: 45px;
+border: 1px solid #ccc;
+margin: 10px 0;
+
+}
+
+
+.formulario input[type=submit]{
+
+width: 100%;
+height: 40px;
+cursor: pointer;
+background-color: burlywood;
+color: black;
+border-radius: 20px;
+transition: 1s;
+font-size: 25px;
+font-weight: 900;
+
+}
+
+.formulario input[type=submit]:hover{
+
+background-color: rgb(135, 93, 38);
+
+}
+
+.formulario input[type=text]:focus{
+
+outline: 0;
+
+
+}
+
+
+
+.formulario input[type=password]:focus{
+
+  outline: 0;
+  
+  
+  }
+
+
+
+
+
+
+
+/* ---Inicio do Formulario --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------Inicio do carrosel ------ */
+
+
+
+.carrossel {
+    height: 350px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 310px 0px;
+    grid-template-columns: 1fr 20px 20px 20px 20px 20px 1fr;
+    align-items: center;
+    justify-items: center;
+    background-color: gray;  
+
+
+  }
+  
+  main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 30vw;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 100px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+
+
+  #carousel h1 {
+
+background-color:slategray;
+display: flex;
+justify-content: center;
+
+  }
+
+  
+  div.item {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    background-color: ;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-230px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  
+  div.item:nth-of-type(1) {
+    --offset: 1;
+    background-color: #39446d;
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #39446d;
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color:#39446d;
+  }
+  div.item:nth-of-type(4) {
+    --offset: 4;
+    background-color: #39446d;
+  }
+  div.item:nth-of-type(5) {
+    --offset: 5;
+    background-color: #39446d;
+  }
+  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
+  
+  input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+  }
+  
+  input:nth-of-type(5) {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(5):checked ~ main#carousel {
+    --position: 5;
+  }  
+
+
+  
+ 
+
+
+
+
+/* ---------- Fim do carrosel  ------- */
+
+
+
+/*
+
+#jogosdestaque{
+
+    float:center; 
+    width:;   
+    
+    height: auto;
+
+    border:thin solid;
+    padding: 30px;
+    margin:;  
+
+    display:flex;
+    margin-left:;
+    margin-right:;
+
+    justify-content: space-around;
+
+}
+    */
+
+
+
+
+#produtosdestaque{
+
+    float:center; 
+    width:;   
+    
+    height: 323px;
+
+    border:thin solid;
+    padding: 30px;
+    margin:;  
+
+    display:flex;
+    margin-left:;
+    margin-right:;
+
+    justify-content: space-around;
+
+    background-color: gray;
+
+    box-shadow: 0px 0px 10px green, 0px 0px 30px blue;
+
+}
+
+
+
+
+.rodape{
+
+    height:400px;
+    background-color: rgb(35, 60, 225);
+    width:;
+    font-size: 50px;
+
+}
+
+
+
+#linksbaixo{
+
+float: left;
+text-decoration: none;
+
+padding: 15px;
+font-size: 30px;
+font-weight: 700;
+
+}
+
+#linksbaixo a{
+
+text-decoration: none;
+color: black;
+padding-left: 30px;
+
+}
+
+#linksbaixo li{
+
+    list-style-type: none;
+
+}
+
+#redessociais{
+
+text-decoration: none;
+align-content: right
+
+}
+
+
+#redessociais img{
+
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+     
+    padding-top: 10px;
+    padding-right: 200px;
+    
+ 
+   
+    
+    
+}
+
+#redessociais li{
+
+    list-style-type: none;
+
+}
