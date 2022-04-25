@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     
 </head>
@@ -17,28 +18,59 @@
 <body>
 
 
-    <div class="cabecalho">
+    <!--Inicialização da tentativa fazer menu -->
 
 
+    <!--teste -->
+    
+<div class="cabecalho">
 
-        <div id= "nomeloja">
 
-            <a><strong>GAME MANIA</strong></a>
-
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="gamemania">GAME MANIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="compras.html">LISTA DE PRODUTOS</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MENU
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Lojas</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="compras.html">Compras</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Contatos</a></li>
+                </ul>
+                </li>
+                
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Busca</button>
+            </form>
+            </div>
         </div>
-
-        <div id="menusuperior">
-
-            <a href=""><strong>Login</strong></a>
-            <a href=""><strong>Compras</strong></a>
-            <a href=""><strong>Atendimento</strong></a>
-            <a href=""><strong>Lojas</strong></a>
-           
-        </div>
+        </nav>
+    </div>         
 
 
+</div>
 
-    </div>
+
+<!--teste -->
+    
+    
 
 
 
@@ -52,75 +84,148 @@
 
 
 
- <div class="principal"> 
-  
-            <div id="todoformulario">
 
-                <input type="text" id="produto">
-
-                <button id="btn"> Cadastrar Produto</button>
+     <div class="principal">
 
 
-                        <ul>
-                            <li>Monte Sua Lista de Compras:</li>
-                        
-                        </ul>
 
 
-             </div>
+
+        <div class="container d-flex justify-content-center">
+            <ul class="list-group mt-5 text-black">
+                <li class="list-group-item d-flex justify-content-between align-content-center">
+                    <div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="100" />
+                        <div class="ml-2">
+                            <h6 class="mb-0">CONSOLES</h6>
+                            <div class="about"> <span>22 Produtos</span></div>
+                        </div>
+                    </div>
+                    <div class="check"> <input type="checkbox" name="a"> </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-content-center">
+                    <div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="100" />
+                        <div class="ml-2">
+                            <h6 class="mb-0">Cadeiras</h6>
+                            <div class="about"> <span>62 Modelos</span></div>
+                        </div>
+                    </div>
+                    <div class="check"> <input type="checkbox" name="a"> </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-content-center">
+                    <div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="100" />
+                        <div class="ml-2">
+                            <h6 class="mb-0">PLACAS GAMER</h6>
+                            <div class="about"> <span>82 Modelos</span></div>
+                        </div>
+                    </div>
+                    <div class="check"> <input type="checkbox" name="a"> </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-content-center">
+                    <div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="100" />
+                        <div class="ml-2">
+                            <h6 class="mb-0">TABLETS</h6>
+                            <div class="about"> <span>182 Modelos</span></div>
+                        </div>
+                    </div>
+                    <div class="check"> <input type="checkbox" name="a"> </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-content-center">
+                    <div class="d-flex flex-row"> <img src="https://img.icons8.com/color/100/000000/folder-invoices.png" width="100" />
+                        <div class="ml-2">
+                            <h6 class="mb-0">GAMES</h6>
+                            <div class="about"> <span>802 Jogos</span></div>
+                        </div>
+                    </div>
+                    <div class="check"> <input type="checkbox" name="a"> </div>
+                </li>
+            </ul>
+        </div>
 
 
-             <style>
+<style>
 
-                #todoformulario{
+                body {
+                    background: white;
+                }
 
-                    font-size: 52PX;
-                    margin: 0;padding: 0;box-sizing: border-box;
-                    background-color: blue;
-                    max-width: 1000px;
-                    width: 100%;
-                    padding:50px;
-                    position:absolute;
-                    margin-left:550px;
-                    margin-top: 300px;
-                    text-align: center;
-                
+                .list-group {
+                    width: 500px !important
+                }
 
+                .list-group-item {
+                    margin-top: 10px;
+                    border-radius: none;
+                    background: blue;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out
+                }
+
+                .list-group-item:hover {
+                    transform: scaleX(1.1)
+                }
+
+                .check {
+                    opacity: 0;
+                    transition: all 0.6s ease-in-out
+                }
+
+                .list-group-item:hover .check {
+                    opacity: 1
+                }
+
+                .about span {
+                    font-size: 12px;
+                    margin-right: 10px
+                }
+
+                input[type=checkbox] {
+                    position: relative;
+                    cursor: pointer
+                }
+
+                input[type=checkbox]:before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    top: 0px;
+                    left: 0;
+                    border: 1px solid hsl(200, 100%, 3%);
+                    border-radius: 3px;
+                    background-color: white
+                }
+
+                input[type=checkbox]:checked:after {
+                    content: "";
+                    display: block;
+                    width: 7px;
+                    height: 12px;
+                    border: solid #007bff;
+                    border-width: 0 2px 2px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    position: absolute;
+                    top: 2px;
+                    left: 6px
+                }
+
+                input[type="checkbox"]:checked+.check {
+                    opacity: 1
                 }
 
 
+</style>
 
-                #produto{
-
-                    font-size: 52PX;
-
-
-                }
+      
 
 
-
-
-
-             </style>
-
-
-             
-
-
-
-
-
-
-
-
-    </div>
+     </div>                             
+        
 
 
 <!--Fim do formulário COMPRAS -->
-
-
-
-
 
 
 
@@ -184,11 +289,9 @@ height: 600px;
 
  </style>
 
-
-    
+   
 
 </div>
-
 
 
 

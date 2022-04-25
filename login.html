@@ -10,135 +10,162 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     
 </head>
 
 <body>
 
+<!--teste -->
+    
+<div class="cabecalho">
 
-    <div class="cabecalho">
 
-
-
-        <div id= "nomeloja">
-
-            <a><strong>GAME MANIA</strong></a>
-
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" id="gamemania">GAME MANIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="login.html">LOGIN</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="compras.html">LISTA DE PRODUTOS</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MENU
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Lojas</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="compras.html">Compras</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Contatos</a></li>
+                </ul>
+                </li>
+                
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-dark" type="submit">Busca</button>
+            </form>
+            </div>
         </div>
-
-        <div id="menusuperior">
-
-            <a href=""><strong>Login</strong></a>
-            <a href=""><strong>Compras</strong></a>
-            <a href=""><strong>Atendimento</strong></a>
-            <a href=""><strong>Lojas</strong></a>
-           
-        </div>
+        </nav>
+    </div>         
 
 
+</div>
 
-    </div>
+
+<!--teste -->
+    
 
 
 
     
 
 
-
+ <!--Inserir formulário -->       
 
     <div class="principal">
 
 
-            <div class="formulario">
-
-       <!--Inserir formulário -->            
-
-        <form class="row g-3">
-            <div class="col-md-8">
-            <label for="validationDefault01" class="form-label">Primeiro Nome</label>
-            <input type="text" class="form-control" id="validationDefault01" value="" required>
-            </div>
-            <div class="col-md-4">
-            <label for="validationDefault02" class="form-label">Sobrenome</label>
-            <input type="text" class="form-control" id="validationDefault02" value="" required>
-            </div>
+        <div class="formulario">
 
             
-            <div class="col-md-4">
-            <label for="validationDefaultUsername" class="form-label">E-mail</label>
-            <div class="input-group">            
-                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-            </div>
-            </div>
 
-            <div class="col-md-6">
-            <label for="validationDefault03" class="form-label">Cidade</label>
-            <input type="text" class="form-control" id="validationDefault03" required>
-            </div>
+            <form class="row g-3">
+                <div class="col-md-8">
+                <label for="validationDefault01" class="form-label">Primeiro Nome</label>
+                <input type="text" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="validationDefault02" value="" required>
+                </div>
 
+                
+                <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">E-mail</label>
+                <div class="input-group">            
+                    <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                </div>
+                </div>
 
-            <div class="col-md-3">
-            <label for="validationDefault04" class="form-label">Estado</label>
-            <select class="estado" id="estado" required>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-                <option value="EX">Estrangeiro</option>       
-                <option selected disabled value="">Estado...</option>
-                <option>...</option>
-            </select>
-            </div>
+                <div class="col-md-6">
+                <label for="validationDefault03" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
 
 
-            <div class="col-md-3">
-            <label for="validationDefault05" class="form-label">CEP</label>
-            <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-            <div class="col-12">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                Concordo com os Termos
-                </label>
-            </div>
-            </div>
-            <div class="col-12">
-            <button class="btn btn-primary" type="submit">Enviar Formulário</button>
-            </div>
-        </form>
+                <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Estado</label>
+                <select class="estado" id="estado" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>       
+                    <option selected disabled value="">Estado...</option>
+                    <option>...</option>
+                </select>
+                </div>
+
+
+                <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+                </div>
+                <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                    Concordo com os Termos
+                    </label>
+                </div>
+                </div>
+                <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar Formulário</button>
+                </div>
+            </form>
                                 
             
 
-                </div>    
+        </div>    
 
 
 
-        </div>
+    </div>
 
 <!--Fim do formulário -->
 
@@ -182,8 +209,8 @@
 
 
 
-
-
+<script src="../PFS_UC9 - Codificação para Front-End/jquery-3.6.0.min.js"></script>
+<script src="../PFS_UC9 - Codificação para Front-End/script.js"></script>
 </body>
 
 </html>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     
 </head>
@@ -17,25 +18,48 @@
 <body>
 
 
+    <!--teste -->
+    
     <div class="cabecalho">
 
 
-
-        <div id= "nomeloja">
-
-            <a><strong>GAME MANIA</strong></a>
-
-        </div>
-
-        <div id="menusuperior">
-
-            <a href=""><strong>Login</strong></a>
-            <a href=""><strong>Compras</strong></a>
-            <a href=""><strong>Atendimento</strong></a>
-            <a href=""><strong>Lojas</strong></a>            
-
-        </div>
-
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" id="gamemania">GAME MANIA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">LOGIN</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="compras.html">LISTA DE PRODUTOS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        MENU
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Lojas</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="compras.html">Compras</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Contatos</a></li>
+                    </ul>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Busca</button>
+                </form>
+                </div>
+            </div>
+            </nav>
+        </div>         
 
 
     </div>
@@ -43,31 +67,29 @@
 
 
 
-    
-
-
+    <!--teste -->
 
     <div class="principal">
 
        
-<h1>PLACA VIDEO</h1>
+        <h1>PLACA VIDEO</h1>
 
-<a href=""><img src="img/Retangle 3.png" alt="Busca"style="width: 300px"></a>
+        <a href=""><img src="img/Retangle 3.png" alt="Busca"style="width: 300px"></a>
 
 
 
-<h2>
-    Lorem ipsum conubia nam dictum nulla nostra purus convallis, mollis tristique lacinia mattis vivamus 
-    cras malesuada a, habitasse pellentesque gravida dictumst cursus sagittis augue. turpis placerat 
-    nulla at felis semper morbi curabitur commodo mattis tellus, viverra quisque porttitor proin 
-    convallis per libero suspendisse vestibulum, urna cursus proin et amet non posuere urna per. 
-    sapien taciti ad nec malesuada tempor ut nullam senectus aptent, orci himenaeos aptent placerat. 
-    
-    Lorem ipsum conubia nam dictum nulla nostra purus convallis, mollis tristique lacinia mattis vivamus 
-    cras malesuada a, habitasse pellentesque gravida dictumst cursus sagittis augue. turpis placerat 
-    nulla at felis semper morbi curabitur commodo mattis tellus, viverra quisque porttitor proin 
-    convallis per libero suspendisse vestibulum, urna cursus proin et amet non posuere urna per. 
-</h2>
+        <h2>
+            Lorem ipsum conubia nam dictum nulla nostra purus convallis, mollis tristique lacinia mattis vivamus 
+            cras malesuada a, habitasse pellentesque gravida dictumst cursus sagittis augue. turpis placerat 
+            nulla at felis semper morbi curabitur commodo mattis tellus, viverra quisque porttitor proin 
+            convallis per libero suspendisse vestibulum, urna cursus proin et amet non posuere urna per. 
+            sapien taciti ad nec malesuada tempor ut nullam senectus aptent, orci himenaeos aptent placerat. 
+            
+            Lorem ipsum conubia nam dictum nulla nostra purus convallis, mollis tristique lacinia mattis vivamus 
+            cras malesuada a, habitasse pellentesque gravida dictumst cursus sagittis augue. turpis placerat 
+            nulla at felis semper morbi curabitur commodo mattis tellus, viverra quisque porttitor proin 
+            convallis per libero suspendisse vestibulum, urna cursus proin et amet non posuere urna per. 
+        </h2>
 
 
 
@@ -112,9 +134,8 @@
 
 
 
-
-
-
+<script src="../PFS_UC9 - Codificação para Front-End/jquery-3.6.0.min.js"></script>
+<script src="../PFS_UC9 - Codificação para Front-End/js/bootstrap.min.js"></script>
 </body>
 
 </html>
