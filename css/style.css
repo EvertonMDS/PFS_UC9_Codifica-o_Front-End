@@ -2,9 +2,8 @@
 
 
 *{
-margin: 0 auto;
-padding:0 auto;
-
+margin: 0;
+padding:0;
 }
 
 
@@ -15,7 +14,7 @@ padding:0 auto;
     font-size: 40px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;  
        
 }
 
@@ -23,12 +22,11 @@ padding:0 auto;
 #nomeloja{
 
 font-style: oblique;
-font-size: 60px;
+font-size: 50px;
 font-weight:bolder;
 padding: 10px;
 padding-left: 30px;
-
-
+color: white;
 
 }
 
@@ -37,7 +35,7 @@ padding-left: 30px;
 #menusuperior a{
 
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 30px;
     font-weight: 700;
     padding-left: 24px;
@@ -56,7 +54,7 @@ background-color: black;
 .lateral_menu{
 
     height: 673px;
-    width: 20%;
+    width: auto;
     background-color: rgb(109, 109, 120);
     float: left;
     font-size: 20px;
@@ -69,8 +67,8 @@ background-color: black;
 .lateral_menu a{
 
     text-decoration: none;
-    color:black;
-    padding: 20px;
+    color: white;
+    padding: 5px;
    
 }
 
@@ -90,17 +88,7 @@ background-color: black;
 }
 
 
-
-
 /* -------Inicio da tentativa de menu ------ */
-
-
-
-
-
-
-
-
 
 
 .container-fluid{
@@ -117,126 +105,79 @@ font-weight: bolder;
 
 
  
-
-
-
-
-
-
 /* -------Fim da tentativa de menu ------ */
 
-
-
-
-
-
-
-
-
-
-
 /* ---Inicio do Formulario --- */
-
-
-
-
-
 .formulario{
 
-margin: 0;padding: 0;box-sizing: border-box;
-background-color: blue;
-max-width: 1000px;
-width: 100%;
-padding:50px;
-position:absolute;
-margin-left:400px;
-margin-top: 300px;
-text-align: center;
-
-}
-
-
-.formulario h1{
-
-
-text-align: center;
-padding: 10px;
-color:black;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
-}
-
-
-.formulario input[type=email],
-.formulario input[type=password]{
-width: 100%;
-height: 45px;
-border: 1px solid #ccc;
-margin: 10px 0;
-
-}
-
-
-.formulario input[type=submit]{
-
-width: 100%;
-height: 40px;
-cursor: pointer;
-background-color: burlywood;
-color: black;
-border-radius: 20px;
-transition: 1s;
-font-size: 25px;
-font-weight: 900;
-
-}
-
-.formulario input[type=submit]:hover{
-
-background-color: rgb(135, 93, 38);
-
-}
-
-.formulario input[type=text]:focus{
-
-outline: 0;
-
-
-}
-
-
-
-.formulario input[type=password]:focus{
-
-  outline: 0;
-  
+  margin: 0;padding: 0;box-sizing: border-box;
+  background-color: blue;
+  max-width: 1000px;
+  width: 100%;
+  padding:20px;
+  position:absolute;
+  margin-left:30%;
+  margin-right: 30%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 35px;
   
   }
+  
+  .formulario h1{
+  
+  text-align: center;
+  padding: 40px;
+  color:black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+  
+  .formulario input[type=email],
+  .formulario input[type=password]{
+  width: 100%;
+  height: 45px;
+  border: 6px solid #ccc;
+  margin: 10px 0;
+  
+  }
+  
+  .formulario input[type=submit]{
+  
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  background-color: burlywood;
+  color: black;
+  border-radius: 20px;
+  transition: 1s;
+  font-size: 45px;
+  font-weight: 900;
+  
+  }
+  
+  .formulario input[type=submit]:hover{
+  
+  background-color: rgb(135, 93, 38);
+  
+  }
+  
+  .formulario input[type=text]:focus{
+  
+  outline: 0;
+  
+  }
+  
+  .formulario input[type=password]:focus{
+  
+    outline: 0;
+      
+    }
+  
 
 
-
-
-
-
-
-/* ---Inicio do Formulario --- */
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ---Fim do Formulario --- */
 /* -------Inicio do carrosel ------ */
-
-
 
 .carrossel {
     height: 350px;
@@ -247,7 +188,6 @@ outline: 0;
     align-items: center;
     justify-items: center;
     background-color: gray;  
-
 
   }
   
@@ -268,15 +208,13 @@ outline: 0;
     pointer-events: none;
   }
 
-
-  #carousel h1 {
+#carousel h1 {
 
 background-color:slategray;
 display: flex;
 justify-content: center;
 
   }
-
   
   div.item {
     position: absolute;
@@ -352,52 +290,19 @@ justify-content: center;
     --position: 5;
   }  
 
-
-  
- 
-
-
-
-
 /* ---------- Fim do carrosel  ------- */
-
-
-
-/*
-
-#jogosdestaque{
-
-    float:center; 
-    width:;   
-    
-    height: auto;
-
-    border:thin solid;
-    padding: 30px;
-    margin:;  
-
-    display:flex;
-    margin-left:;
-    margin-right:;
-
-    justify-content: space-around;
-
-}
-    */
-
-
 
 
 #produtosdestaque{
 
     float:center; 
-    width:;   
+    width:auto;   
     
     height: 323px;
 
     border:thin solid;
     padding: 30px;
-    margin:;  
+    margin:auto;  
 
     display:flex;
     margin-left:;
@@ -407,11 +312,9 @@ justify-content: center;
 
     background-color: gray;
 
-    box-shadow: 0px 0px 10px green, 0px 0px 30px blue;
+    box-shadow: 0px 0px 30px blue;
 
 }
-
-
 
 
 .rodape{
@@ -419,17 +322,14 @@ justify-content: center;
     height:400px;
     background-color: rgb(35, 60, 225);
     width:;
-    font-size: 50px;
+    font-size: 50px;    
 
 }
-
-
 
 #linksbaixo{
 
 float: left;
 text-decoration: none;
-
 padding: 15px;
 font-size: 30px;
 font-weight: 700;
@@ -439,8 +339,9 @@ font-weight: 700;
 #linksbaixo a{
 
 text-decoration: none;
-color: black;
+color: white;
 padding-left: 30px;
+padding-right: 220px;
 
 }
 
@@ -453,24 +354,20 @@ padding-left: 30px;
 #redessociais{
 
 text-decoration: none;
-align-content: right
+align-content: right;
 
 }
 
 
 #redessociais img{
 
-    width: 50px;
+    width: 120px;
     height: 50px;
     text-decoration: none;
      
     padding-top: 10px;
-    padding-right: 200px;
-    
- 
-   
-    
-    
+    padding-left: 60px;
+        
 }
 
 #redessociais li{
